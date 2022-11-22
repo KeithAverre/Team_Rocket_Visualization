@@ -1,0 +1,32 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Flights{% endblock %}</title>
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>flight_graphs</h1>
+            <nav>
+                <span>
+                    first span
+
+                </span>
+                <span>
+                    2nd span
+                </span>
+            </nav>
+        </header>
+        <main>
+            {% block main %}
+            {% endblock %}
+        </main>
+
+    </body>
+</html>
