@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Flight_visualization.apps.FlightVisualizationConfig',
+    #'Flight_visualization.apps.FlightVisualizationConfig',
+    'Flight_visualization',
     'channels'
 ]
 
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'CSCE490_Team_Rocket.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [
+            BASE_DIR.joinpath('templates')
+        ]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS =[
+STATICFILES_DIRS = [
     BASE_DIR.joinpath('static')
 ]
 # Default primary key field type
