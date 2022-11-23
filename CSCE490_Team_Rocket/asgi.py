@@ -13,4 +13,7 @@ from django.core.asgi import get_asgi_application
 from channels.routing import ProtocolTypeRouter
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CSCE490_Team_Rocket.settings')
 
-application = get_asgi_application()
+application = ProtocolTypeRouter({
+    'http': get_asgi_application()
+})
+

@@ -71,7 +71,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'CSCE490_Team_Rocket.wsgi.application'
-
+ASGI_APPLICATION = 'CSCE490_Team_Rocket.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
