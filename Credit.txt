@@ -1,1 +1,2 @@
 https://www.youtube.com/watch?v=tZY260UyAiE for websocket information and chart.js.
+https://channels.readthedocs.io/en/stable/tutorial/part_1.html for daphne information and correction in above source.

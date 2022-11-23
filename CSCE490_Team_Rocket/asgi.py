@@ -13,13 +13,14 @@ from django.core.asgi import get_asgi_application
 
 from channels.routing import ProtocolTypeRouter,URLRouter
 from channels.auth import AuthMiddlewareStack
+from channels.security.websocket import AllowedHostsOriginValidator
 
 from Flight_visualization.routing import ws_urlpatterns
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CSCE490_Team_Rocket.settings')
 
 application = ProtocolTypeRouter({
     'http': get_asgi_application(),
-    'websocket': AuthMiddlewareStack(URLRouter(ws_urlpatterns))
+    'websocket': AllowedHostsOriginValidator(AuthMiddlewareStack(URLRouter(ws_urlpatterns)))
 
 })
 

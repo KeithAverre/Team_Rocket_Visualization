@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
+    'channels',
+    'Flight_visualization',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,8 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #'Flight_visualization.apps.FlightVisualizationConfig',
-    'Flight_visualization',
-    'channels'
+
+
+
+
 ]
 
 MIDDLEWARE = [
@@ -53,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'CSCE490_Team_Rocket.urls'
-
+print("hi i did settings")
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -73,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CSCE490_Team_Rocket.wsgi.application'
+#WSGI_APPLICATION = 'CSCE490_Team_Rocket.wsgi.application'
 ASGI_APPLICATION = 'CSCE490_Team_Rocket.asgi.application'
 
 # Database
