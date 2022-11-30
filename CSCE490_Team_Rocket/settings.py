@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+############# odd behavior when daphne is at bottom
 INSTALLED_APPS = [
     'daphne',
     'channels',
@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'CSCE490_Team_Rocket.urls'
-print("hi i did settings")
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
