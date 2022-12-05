@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var djangoData = JSON.parse(e.data);
         console.log(djangoData);
 
-        document.querySelector('#listener').innerText = djangoData.value;
+        document.querySelector('#listener').innerText = JSON.stringify(djangoData.value);
     };
     socket.onerror = function (error) {
         alert(`[error]`);
