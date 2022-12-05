@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: 'Q over flight',
           align: 'left'
         },
         grid: {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: '3D Acceloration over flight',
           align: 'left'
         },
         grid: {
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: '3D Gyration over flight',
           align: 'left'
         },
         grid: {
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: '3D Magnetometer over flight',
           align: 'left'
         },
         grid: {
@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: 'GPS Location over flight',
           align: 'left'
         },
         grid: {
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: 'Gps Extras over flight',
           align: 'left'
         },
         grid: {
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: 'HPA pressure over flight',
           align: 'left'
         },
         grid: {
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: 'PA Pressure over flight',
           align: 'left'
         },
         grid: {
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
           curve: 'smooth'
         },
         title: {
-          text: 'Temperature over flight',
+          text: 'Altitude over flight',
           align: 'left'
         },
         grid: {
@@ -456,14 +456,14 @@ document.addEventListener('DOMContentLoaded', () => {
               data: data_Q6_3
           }]);
         chart_RawA.updateSeries([{
-            name: "GX",
-            data: data_RawGX
+            name: "AX",
+            data: data_RawAX
         },{
-              name: "GY",
-              data: data_RawGY
+              name: "AY",
+              data: data_RawAY
           },{
-              name: "GZ",
-              data: data_RawGZ
+              name: "AZ",
+              data: data_RawAZ
           }]);
         chart_RawG.updateSeries([{
             name: "GX",
