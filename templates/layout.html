@@ -7,22 +7,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Flights{% endblock %}</title>
-        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+
         <link href="{% static 'apexcharts.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'uaa490-styles.css'  %}">
     </head>
     <body>
-        <header>
-            <h1>flight_graphs</h1>
-            <nav>
-                <span>
-                    first span
-
-                </span>
-                <span>
-                    2nd span
-                </span>
-            </nav>
-        </header>
+        <div class="navbar">
+            <h1>Flight page</h1>
+        </div>
         <main>
             {% block main %}
             {% endblock %}
